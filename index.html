@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+<label for="">Nombre 1</label>
+<input type="text" name="nombre1" id="nombre1">
+<label for="">nombre 2</label>
+<input type="text" name="nombre2" id="nombre2">
+<button type="button" onclick="multi()">Valider</button>
+</form>
+<h1 id="result"></h1>
+
+<script>
+    function multi(){
+        let nombre1 = document.getElementById("nombre1").value;
+        let nombre2 = document.getElementById("nombre2").value;
+        let resultat = nombre1 * nombre2;
+        document.getElementById("result").innerHTML = resultat;
+    }
+    
+    
+</script>
+</body>
+</html>
